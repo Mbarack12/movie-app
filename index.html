@@ -5,10 +5,242 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .column{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+*{
+    margin: 0px;
+    list-style: none;
+}
+    .rom{
+        
+        color: black;
+      
+    }
+
+    .hor{
+        height: 20px;
+        width: 10%;
+        color:black;
+        display: table-column;
+        justify-content: center;
+    }
+    .dep{
+        color: brown;
+        display: flex;
+       justify-content: center;
+    }
+    .ket{
+        color: brown;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sep{
+        color: brown;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .mik{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav{
+        background-color: black;
+        height: 90px;
+        color: beige;
+        font-size: large;
+    }
+    .box{
+        overflow: hidden;
+        justify-content: space-evenly;
+        border-radius: 1rem;
+        text-align: center;
+        flex-grow: 1px;
+        background-color: aliceblue;
+        box-shadow: 0 0 100px 1px rgb(221, 217, 217);
+        transition: all 0.35 case-in-out;
+        &:hover{
+            transform: scale(1.05);
+         box-shadow:0 0 200px 20px rebeccapurple(0, 0, 0 0, 1) ;
+        }
+        
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        
+    }
+    .blo{
+        color: brown;
+        display: flex;
+        justify-content: center;
+    }
+    .hit{
+        color: brown;
+        display: flex;
+        justify-content: space-around;
+    }
+    .conter{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cap{
+        position: absolute;
+        right: 50%;
+        top: 300px;
+        color:white;
+        background-color: red;
+        padding-left: 30px;
+        padding-right:30px;
+       padding-bottom: 15px;
+       padding-top: 15px;
+       width: 85px;
+        border-radius: 1rem;
+        border: 1px solid gray;
+        &:hover{
+            background-color: rgb(122, 26, 212);
+            font-size: larger;
+            
+        }
+
+    }
+    .jak{
+        align-items: center;
+        color: rgb(158, 13, 40);
+        
+        
+    }
+    
+    .fix{
+        height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: aliceblue;
+        
+       }
+</style>
 <body>
-    <h1>DUNMOVIES</h1>
-    <P>DUNMOVIES is a movie app created by mr.Duncan Mubarack Ayidah. The app was created on 26th deceember 2022, this app has a copyright and a lisence.The app was created to create enetertainment not for a specific age rate but all age rate. this app comes highly recommended because it most importantly keeps kids in a save space from adult content, since te parent or guardian who created the account and specified it for a kid the app is programmed to only show kids content. 
-        This app is safe and reliable. our motive is give you entertaiment without problems.
-    WE APPRECIATE YOU AS A SUSCRIBER</P>
-</body>
+        <nav class="nav row">
+            <div>DUNCANMOVIES</div>
+            <div><a href="quiz.html">home</a></div>
+            <div><a href="boxmodel.html">log in</a></div>
+            <div><a href="test.html">start for free</a></div>
+
+        </nav><br>
+<div class="">
+    <img src="images/bring him  back dead.jpg" alt="" id="cover" width="100%">
+    
+    <div class="jak">
+    <H1>BEST MOVIES STREAMING PLATFORM</H1><br>
+    <H2>SCROLL DOWN FOR MORE MOVIES</H2>
+    <div class="cap">
+        watch now
+    
+</div>
+</div>
+    <div class="container row">
+        
+        
+          <div class="box"><video src="video/Transfusion (2023).MP4" alt="" height="300px"  width="300px" poster="images/fight 2.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBlZmMxMGFmLWU4MDQtNGU0Mi1hYzUxLWU4ZDA5NmQ1YjE4OC5qcGc=" controls>
+            </video>
+            <P><a href="quiz.html">shadow force down 1.2gb</a></P> <br>
+        </div>
+    
+        
+        <div class="box"><video src="video/Iceman.2014.720p.BluRay.x264-[YTS.AM].mp4" alt="" height="300px"  width="300px" poster="images/fight 1.jfif" controls>
+           </video>
+            <p><a href="quiz.html">i am rage down 132mb</a></p> <br> 
+            
+        </div>
+        
+         <div class="box">
+            
+            <video src="video/DOMAIN.mp4" alt="" height="300px"  width="300px" poster="images/fighter-poster.jpg" controls>
+            </video>
+            <p><a href="quiz.html">fighter dowm 1gb</a></p> <br>
+            
+
+        </div>
+    
+            <div class="box">
+                <video src="video/Transfusion (2023).MP4" alt="" height="300px" width="300px" poster="images/horr cover photo.jpg" controls>
+                </video>
+                <p> <a href="">the last night dowm 1gb</a></p>
+            </div>
+            
+            <div class="conter row">
+                <div class="box">
+                <video src="video/Black Sherif - Oil in my Head (Official Video).mp4" alt="" height="300px" width="300px" poster="images/hor 1.avif" controls>
+                </video>
+                <p><a href="">hallowendown down 154mb</a></p>
+                </div>
+
+                <div class="box">
+                    <video src="video/Iceman.2014.720p.BluRay.x264-[YTS.AM].mp4" alt="" height="300px" width="300px" poster="images/hor 2.webp" controls>
+                    </video>
+                    <div><a href="">The jesster down 1gb</a></div>
+                </div>
+                <div class="box">
+                    <video src="video/Madame_Web.mp4" alt="" height="300px" width="300px" poster="images/horror.webp" controls>
+                    </video>
+                   <p><div><a href="">fright night dowm 175mb</a></div></p>
+                </div> 
+                
+                <div class="box">
+                    <video src="video/Madame_Web.mp4" alt="" height="300px" width="300px" poster="images/KeSzrsaJUDodHrxj8tXz7g.png" controls>
+                    </video>
+                   <p><div><a href="">Titanic down 143mb</a></div></p>
+                </div>
+
+                <div class="box">
+                    <video src="video/DOMAIN.mp4" alt="" height="300px" width="300px" poster="images/roma 1.jpg" controls>
+                    </video>
+                    <P><div><a href="">Me before you down 1gb</a></div></P>
+                </div>
+                <div class="box">
+                    <video src="video/Shang-Chi and the Legend of the Ten Rings (2021) (NetNaija.com).mp4" 2.jfif" alt="" height="300px" width="300px" poster="images/roma cover photo.jpg"  controls>
+                    </video>
+                    <p><div><a href="">fault in our stars down 1gb</a></div></p>
+                </div>
+                <div class="box">
+                    <video src="video/Transfusion (2023).MP4" alt="" height="300px" width="300px" poster="images/romantic.jpg" controls>
+                    </video>
+                    <p></p><div><a href="">Sweet november down load 157mb</a></div><picture></p>
+                </div>
+                <div  class="box">
+                    <video src="video/Shang-Chi and the Legend of the Ten Rings (2021) (NetNaija.com).mp4" alt="" height="300px" width="300px" poster="images/10825231.jpg" controls>
+                    </video>
+                    <p><div><a href="">The crood down 145mb</a></div></p>
+                </div>
+            </div>
+    </div>
+</body><br>
+<footer class="fix">
+    <div>@COPYRIGHT 2020</div>
+    
+        <div class="href"> <a href="index.html">ABOUT </a></div>
+        <div>CONTACT:+233257153628</div>
+        
+        <div>APP SUITABLE FOR ALL AGE LIMIT</div>
+        
+    
+</footer>
+<script src="myscript.js"></script>
 </html>
