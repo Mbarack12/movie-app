@@ -1,246 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    .column{
-        display: flex;
-        flex-direction:column;
-        justify-content: space-between;
-    }
-    .row{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neflix app</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
 
 
 *{
-    margin: 0px;
-    list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  list-style: none;
 }
-    .rom{
-        
-        color: black;
-      
-    }
+body{
+    font-family: arial, sans-serif;
+    margin:;
+    padding:;
+    background-color: black;
+    color: beige;
+  }
+  header{
+    background-color: rgb(10, 10, 10);
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  
 
-    .hor{
-        height: 20px;
-        width: 10%;
-        color:black;
-        display: table-column;
-        justify-content: center;
-    }
-    .dep{
-        color: brown;
-        display: flex;
-       justify-content: center;
-    }
-    .ket{
-        color: brown;
-        display: flex;
-        justify-content: space-between;
-    }
-    .sep{
-        color: brown;
-        display: flex;
-        justify-content: space-between;
-    }
+  }
+  
+  .logo{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .hero{
     
-    
-    .mik{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    height: 500px;
+  }
+  .box{
+    overflow: hidden;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    text-align: center;
+    flex-grow: 1px;
+    background-color: rgba(6, 6, 6, 0.909);
+    box-shadow: 0 0 100px 1px black;
+    transition: all 0.35 case-in-out;
+    &:hover{
+      transform:scale(1.05);
+      box-shadow: 0 0 200px 20px rebeccapurple(0, 0, 0, 0, 1);
     }
-    .nav{
-        background-color: black;
-        height: 90px;
-        color: beige;
-        font-size: large;
-    }
-    .box{
-        overflow: hidden;
-        justify-content: space-evenly;
-        border-radius: 1rem;
-        text-align: center;
-        flex-grow: 1px;
-        background-color: aliceblue;
-        box-shadow: 0 0 100px 1px rgb(221, 217, 217);
-        transition: all 0.35 case-in-out;
-        &:hover{
-            transform: scale(1.05);
-         box-shadow:0 0 200px 20px rebeccapurple(0, 0, 0 0, 1) ;
-        }
-        
-    }
-    .container{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 100px;
-        
-    }
-    .blo{
-        color: brown;
-        display: flex;
-        justify-content: center;
-    }
-    .hit{
-        color: brown;
-        display: flex;
-        justify-content: space-around;
-    }
-    .conter{
-        display: flex;
-        justify-content: space-around;
-    }
-    .cap{
-        position: absolute;
-        right: 50%;
-        top: 300px;
-        color:white;
-        background-color: red;
-        padding-left: 30px;
-        padding-right:30px;
-       padding-bottom: 15px;
-       padding-top: 15px;
-       width: 85px;
-        border-radius: 1rem;
-        border: 1px solid gray;
-        &:hover{
-            background-color: rgb(122, 26, 212);
-            font-size: larger;
-            
-        }
+  }
+  
+  
+  .hero-image{
+    position: relative;
+    height: 500px;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .hero h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+  .hero p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+  .hero button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .movies{
+    padding: 2em;
+  }
+  .movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .movie-card{
+    margin: 1em;
+    width: 200px;
+    margin: 5px;
+  }
+  .movie-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 05em, 0.5em;
+  }
+  .movie-card h3{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  .dede{
+    font-style: italic;
+    font-size: xx-large;
+
+
+  }
+  .footer .footer-child{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 2em;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    color: rgb(250, 247, 247);
+    list-style: none;
+  }
+  
+    .footer {
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px 0px 12px 12px rgba(255,255,255, 0.3);
+  }
+  
+  .nav a{
+   
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+  }
+  .titles{
+    margin: 15px;
+  }
+  .sign{
+
+    border: 1px solid gray;
+    padding: 6px;
+    background-color: red;
+    border-radius: 0.4rem;
+    box-shadow: inset 0px 0px 20px rgb(231, 179, 179);
+    font-family: 'Courier New', Courier, monospace;
+    transition: all;
+    transition-duration: 2s;
+
+
+    &:hover{
+
+    padding: 9px;
+    box-shadow: inset 0px 0px 20px rgb(8, 11, 219);
+    font-family: 'Courier New', Courier, monospace;
 
     }
-    .jak{
-        align-items: center;
-        color: rgb(158, 13, 40);
-        
-        
-    }
-    
-    .fix{
-        height: 30px;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        background-color: black;
-        color: aliceblue;
-        
-       }
+  }
+
+  .cover{
+    background-image: url('images/netflix_page_cover_by_mrdarkdevil000_df1umzn-fullview.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 </style>
-<body>
-        <nav class="nav row">
-            <div>DUNCANMOVIES</div>
-            <div><a href="quiz.html">home</a></div>
-            <div><a href="boxmodel.html">log in</a></div>
-            <div><a href="test.html">start for free</a></div>
+</head>
 
-        </nav><br>
-<div class="">
-    <img src="images/bring him  back dead.jpg" alt="" id="cover" width="100%">
-    
-    <div class="jak">
-    <H1>BEST MOVIES STREAMING PLATFORM</H1><br>
-    <H2>SCROLL DOWN FOR MORE MOVIES</H2>
-    <div class="cap">
-        watch now
-    
-</div>
-</div>
-    <div class="container row">
-        
-        
-          <div class="box"><video src="video/Transfusion (2023).MP4" alt="" height="300px"  width="300px" poster="images/fight 2.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBlZmMxMGFmLWU4MDQtNGU0Mi1hYzUxLWU4ZDA5NmQ1YjE4OC5qcGc=" controls>
-            </video>
-            <P><a href="quiz.html">shadow force down 1.2gb</a></P> <br>
-        </div>
-    
-        
-        <div class="box"><video src="video/Iceman.2014.720p.BluRay.x264-[YTS.AM].mp4" alt="" height="300px"  width="300px" poster="images/fight 1.jfif" controls>
-           </video>
-            <p><a href="quiz.html">i am rage down 132mb</a></p> <br> 
-            
-        </div>
-        
-         <div class="box">
-            
-            <video src="video/DOMAIN.mp4" alt="" height="300px"  width="300px" poster="images/fighter-poster.jpg" controls>
-            </video>
-            <p><a href="quiz.html">fighter dowm 1gb</a></p> <br>
-            
 
-        </div>
-    
-            <div class="box">
-                <video src="video/Transfusion (2023).MP4" alt="" height="300px" width="300px" poster="images/horr cover photo.jpg" controls>
-                </video>
-                <p> <a href="">the last night dowm 1gb</a></p>
-            </div>
-            
-            <div class="conter row">
-                <div class="box">
-                <video src="video/Black Sherif - Oil in my Head (Official Video).mp4" alt="" height="300px" width="300px" poster="images/hor 1.avif" controls>
-                </video>
-                <p><a href="">hallowendown down 154mb</a></p>
-                </div>
+<body style="overflow-x: hidden;">
+  <div class="cover">
+<header class="nav">
+    <img src="images/netflix-apk-768x512.png" alt="netflix logo" class="logo sign">
+    <nav> <a href="">MOVIES</a></nav>
+    <nav> <a href="form.html" class="sign">Sign In</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      
+      <h1>Unlimited movies,TV shows,and more</h1><br>
+      <h1></h1>
+      <p style="color: rgb(234, 225, 225); font-size: larger;">watch tv shows and movies anytime, anywhere </p>
+      
+    </section>
+  </div>
+  </main>
+<h1 class="titles">POPULAR MOVIES</h1>
+   <div class="container row">
+      
+    <div class="box"><img src="images/fighter-poster.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/horror.webp" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/72546949-trap.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/Inside-2023-movie-poster.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/dp3_1sht_intl_digital_srgb_ka_blades_v2_resized.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/kik.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/The-Beekeeper-2024-movie-poster.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/vov.jpg" alt="" height="300px" width="300px"></div>
+  </div>
+  <img src="images/nice cover.jpg" alt="" id="cover" width="100%">
+<h1 class="titles">TRENDING MOVIES</h1>
+  <div class="container row">
+    <div class="box"><img src="images/avatar-movie-dvd-cover2.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/adam driver.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/avengers.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/jaws.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/bring him  back dead.jpg" alt="" width="300px" height="300px"></div>
+    <div class="box"><img src="images/OIP.webp" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/cover 3.jpg" alt="" height="300px" width="300px"></div>
+    <div class="box"><img src="images/roma 1.jpg" alt="" height="300px" width="300px"></div>
+  </div>
+  <div class="row">
+  <img src="images/netflix anima 3.gif" alt="" id="" width="600px" height="300px">
+  <Nav class="dede">monthly subscribtion for 50gh</Nav>
+  <button style="color: rgb(10, 10, 10) ; font-size: xx-large;"> <a href="">suscribe</a></button>
+  </div>
 
-                <div class="box">
-                    <video src="video/Iceman.2014.720p.BluRay.x264-[YTS.AM].mp4" alt="" height="300px" width="300px" poster="images/hor 2.webp" controls>
-                    </video>
-                    <div><a href="">The jesster down 1gb</a></div>
-                </div>
-                <div class="box">
-                    <video src="video/Madame_Web.mp4" alt="" height="300px" width="300px" poster="images/horror.webp" controls>
-                    </video>
-                   <p><div><a href="">fright night dowm 175mb</a></div></p>
-                </div> 
-                
-                <div class="box">
-                    <video src="video/Madame_Web.mp4" alt="" height="300px" width="300px" poster="images/KeSzrsaJUDodHrxj8tXz7g.png" controls>
-                    </video>
-                   <p><div><a href="">Titanic down 143mb</a></div></p>
-                </div>
+<footer class="footer row">
+  <div class="footer-child">
+    <div>
+    <ul>
+      <li>help center</li>
+      <li>media center</li>
+      <li>terms of use</li>
+      <li>cookie prefrence</li>
+    </ul>
+  </div>
+  <div>
+    <p>&copy; 2025 Netflix, inc</p>
+  </div>
+  <div>
+    <ul>
+      <li>ABOUT</li>
+      <LI>Address= p.o box kumasi Ahodwo</LI>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li>CONTACT</li>
+      <li>+233257153628</li>
+    </ul>
+  </div>
+  </div>
 
-                <div class="box">
-                    <video src="video/DOMAIN.mp4" alt="" height="300px" width="300px" poster="images/roma 1.jpg" controls>
-                    </video>
-                    <P><div><a href="">Me before you down 1gb</a></div></P>
-                </div>
-                <div class="box">
-                    <video src="video/Shang-Chi and the Legend of the Ten Rings (2021) (NetNaija.com).mp4" 2.jfif" alt="" height="300px" width="300px" poster="images/roma cover photo.jpg"  controls>
-                    </video>
-                    <p><div><a href="">fault in our stars down 1gb</a></div></p>
-                </div>
-                <div class="box">
-                    <video src="video/Transfusion (2023).MP4" alt="" height="300px" width="300px" poster="images/romantic.jpg" controls>
-                    </video>
-                    <p></p><div><a href="">Sweet november down load 157mb</a></div><picture></p>
-                </div>
-                <div  class="box">
-                    <video src="video/Shang-Chi and the Legend of the Ten Rings (2021) (NetNaija.com).mp4" alt="" height="300px" width="300px" poster="images/10825231.jpg" controls>
-                    </video>
-                    <p><div><a href="">The crood down 145mb</a></div></p>
-                </div>
-            </div>
-    </div>
-</body><br>
-<footer class="fix">
-    <div>@COPYRIGHT 2020</div>
-    
-        <div class="href"> <a href="index.html">ABOUT </a></div>
-        <div>CONTACT:+233257153628</div>
-        
-        <div>APP SUITABLE FOR ALL AGE LIMIT</div>
-        
-    
 </footer>
-<script src="myscript.js"></script>
+  <script src="script.js"></script>
+</body>
+
+
 </html>
