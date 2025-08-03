@@ -1,0 +1,178 @@
+*{
+  text-decoration: none;
+  margin: 0px;
+  list-style: none;
+}
+body{
+    font-family: arial, sans-serif;
+    margin:;
+    padding:;
+    background-color: black;
+    color: beige;
+  }
+  header{
+    background-color: rgb(10, 10, 10);
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  
+
+  }
+  
+  .logo{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .hero{
+    
+    height: 500px;
+  }
+  .box{
+    overflow: hidden;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    text-align: center;
+    flex-grow: 1px;
+    background-color: rgba(6, 6, 6, 0.909);
+    box-shadow: 0 0 100px 1px black;
+    transition: all 0.35 case-in-out;
+    &:hover{
+      transform:scale(1.05);
+      box-shadow: 0 0 200px 20px rebeccapurple(0, 0, 0, 0, 1);
+    }
+  }
+  
+  
+  .hero-image{
+    position: relative;
+    height: 500px;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .hero h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+  .hero p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+  .hero button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .movies{
+    padding: 2em;
+  }
+  .movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .movie-card{
+    margin: 1em;
+    width: 200px;
+    margin: 5px;
+  }
+  .movie-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 05em, 0.5em;
+  }
+  .movie-card h3{
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  .dede{
+    font-style: italic;
+    font-size: xx-large;
+
+
+  }
+  .footer .footer-child{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding: 2em;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    color: rgb(250, 247, 247);
+    list-style: none;
+  }
+  
+    .footer {
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px 0px 12px 12px rgba(255,255,255, 0.3);
+  }
+  
+  .nav a{
+   
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+  }
+  .titles{
+    margin: 15px;
+  }
+  .sign{
+
+    border: 1px solid gray;
+    padding: 6px;
+    background-color: red;
+    border-radius: 0.4rem;
+    box-shadow: inset 0px 0px 20px rgb(231, 179, 179);
+    font-family: 'Courier New', Courier, monospace;
+    transition: all;
+    transition-duration: 2s;
+
+
+    &:hover{
+
+    padding: 9px;
+    box-shadow: inset 0px 0px 20px rgb(8, 11, 219);
+    font-family: 'Courier New', Courier, monospace;
+
+    }
+  }
+
+  .cover{
+    background-image: url('../images/netflix_page_cover_by_mrdarkdevil000_df1umzn-fullview.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
